@@ -1,7 +1,25 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './components/common/Home.js'
+import NavBar from './components/common/NavBar.js'
+import Footer from './components/common/Footer.js'
+import Exercises from './components/common/Exercises.js'
 
 function App() {
-  return <h1>Hello World</h1>
+
+  return (
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/exercises" element={<Exercises />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App

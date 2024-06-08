@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#b413e0",
+    "titleBar.activeBackground": "#b413e0",
+    "titleBar.inactiveBackground": "#b413e0",
+    "statusBar.foreground": "#000",
+    "titleBar.inactiveForeground": "#000",
+    "titleBar.activeForeground": "#000",
+  },
+  "window.title": "Move With Alice FRONT END"
+}
