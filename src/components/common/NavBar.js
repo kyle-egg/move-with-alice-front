@@ -24,6 +24,7 @@ function NavBar() {
             </a>
           </li>
           <li className="navtext uk-visible@l"><a id="navtext" href="/">Home</a></li>
+          <li className="navtext uk-visible@l"><a id="navtext" href="/programs">Programs</a></li>
           <li className="navtext uk-visible@l"><a id="navtext" href="/exercises">Exercises</a></li>
         </ul>
       </div>

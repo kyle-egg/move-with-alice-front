@@ -14,6 +14,12 @@ export function getAllExercises() {
   return axios.get('/api/exercises')
 }
 
+//* PROGRAM REQ
+
+export function getAllPrograms() {
+  return axios.get('/api/programs')
+}
+
 //* LIKE / COMMENT REQ
 
 // export function likeExercise(exerciseId) {

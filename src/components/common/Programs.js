@@ -1,19 +1,19 @@
 import React from 'react'
-import { getAllExercises } from '../../lib/api'
+import { getAllPrograms } from '../../lib/api'
 
-function Exercises() {
-  const [exercises, setExercises] = React.useState(null)
+function Programs() {
+  const [Programs, setPrograms] = React.useState(null)
 
   React.useEffect(() => {
     const getData = async () => {
-      const res = await getAllExercises()
-      setExercises(res.data)
+      const res = await getAllPrograms()
+      setPrograms(res.data)
     }
     getData()
     
   }, [ ])
 
-  console.log(exercises)
+  console.log(Programs)
 
   return (
     <section>
@@ -21,9 +21,10 @@ function Exercises() {
       </div>
       <div id="homeabout" className="uk-child-width-1-1@s" >
         <div className="homecontainer">
-          <div id="elevate" className="uk-background-cover uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
-            <h3 id="abouttitle"className="uk-text-lead">Exercises</h3>
+          <div id="elevate" className="uk-background-cover uk-height-full uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
             <img className="logohome"></img>
+            <h3 id="abouttitle"className="uk-text-lead">Programs</h3>
+            <br></br>
             <p className="paratext">Blah blah blah
             </p>
           </div>
@@ -32,4 +33,4 @@ function Exercises() {
     </section>
   )
 }
-export default Exercises
+export default Programs

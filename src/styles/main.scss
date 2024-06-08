@@ -1,5 +1,5 @@
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #DA7D02;
+$global-link-color: #dbac6d;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -10,3 +10,657 @@ $global-link-color: #DA7D02;
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#nav {
+// filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
+  // background-image: url(../assets/jbl_Pattern_Watermark.jpg);
+  background-size: cover;
+}
+
+
+#navtext {
+  color: #dbac6d;
+  font-stretch: semi-expanded;
+  font-weight: 100;
+  font-size: small;
+}
+
+.navlogo {
+  height: 125px;
+  width: auto;
+  padding: 10px 5px 20px 5px;
+}
+
+// .uk-offcanvas-bar {
+//   background-image: url(../assets/jbl_Pattern_Watermark.jpg);
+// }
+
+#hamburger {
+  filter: invert(76%) sepia(27%) saturate(630%) hue-rotate(352deg) brightness(89%) contrast(92%);
+  margin-top: 15px;
+}
+
+
+#ighidden {
+  color: #dbac6d;
+  padding: 0px;
+}
+
+.sidenavlogo {
+  height: 150px;
+  width: 170px;
+  padding: 20px;
+}
+
+#closebutton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #dbac6d;
+  font-size: 20pt;
+}
+
+.booknav {
+  margin: 0px;
+  color: #dbac6d;
+}
+
+#mobilemenu {
+background-color: black;
+}
+
+#homehero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#homeabout {
+  background-size: cover;
+}
+
+#abouttitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#reservations {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin-top: -100px;
+}
+
+.paratext {
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+.eventtext {
+  color: black;
+  font-weight: 100;
+  text-align: right;
+}
+
+#whitegradient {
+  background: rgb(255,255,255);
+background: -moz-radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 150%);
+background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 150%);
+background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 150%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#elevate {
+  padding: 50px;
+}
+
+#whatson {
+  background-size: cover;
+  height: 350px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#menu {
+  background-size: cover;
+  height: 350px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#events {
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#homethumb {
+  color: white;
+  font-weight: 700;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  background: -webkit-linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  background: linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+  height: 300px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.resbox{
+  height: 400px;
+}
+
+.bluecontainer {
+  background-color: #0c3151;
+}
+
+.lightbluecontainer {
+  background-color: #12748c;
+}
+
+.goldcontainer {
+  background-color: #dbac6d;
+}
+
+.blackcontainer {
+  background-color: black;
+}
+
+#whatsonhero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 525px;
+}
+
+#giftvoucherhero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#vouchertitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#menuhero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#eventshero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#contacthero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 425px;
+}
+
+#footnav {
+  // filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
+    // background-image: url(../assets/jbl_Pattern_Watermark.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+.address {
+  text-align: center;
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.drinkname {
+  text-align: left;
+  padding: 0px 50px;
+}
+
+.drinkdescription {
+  text-align: left;
+  color: #2c4044;
+  padding: 0px 500px 0px 50px;
+}
+
+.drinkprice {
+  float: right;
+  padding: 0px 50px 0px 50px;
+}
+
+.drinkglass {
+  float: right;
+  margin: 0px 50px 0px 50px;
+}
+
+.drinkbottle {
+  float: right;
+  padding: 0px 50px 0px 50px;
+}
+
+#served {
+  padding: 0px;
+}
+
+#glass {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+  padding: 0px 100px;
+  text-align: right;
+}
+
+#stickymenu {
+  padding: 0px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#cocktailsTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#gAndTsTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#champagneTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#winesTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#bottlesTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#tequilaTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#vodkaTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#ginTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#rumTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#asianTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#scotchTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#japaneseTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#bourbonTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#cognacTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-button {
+  background-color:#12748c;
+  border: #dbac6d;
+  color: #dbac6d;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px 5px;
+  margin: 5px 5px;
+  font-size: 10pt;
+}
+
+#cognacbutton {
+  margin-top: -1px;
+}
+
+#shots {
+  background-color:#dbac6d;
+  border:#12748c;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#shot {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin: 20px 0px 0px 0px;
+}
+
+#shottype {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin: 0px;
+}
+
+
+#eventright {
+  background-size: cover;
+  height: 350px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#eventcenter {
+  background-size: cover;
+  height: 350px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#eventleft {
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+.uk-input {
+  background-color:#dbac6d;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 2px #0b2641;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-input:focus {
+  outline: none;
+}
+
+.uk-fieldset { 
+  border:0px;
+  box-shadow: none;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 0px #DDD;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-textarea {
+  background-color:#dbac6d;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 2px #0b2641;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-textarea:-moz-placeholder { /* Firefox 18- */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-input::-moz-placeholder { /* Firefox 19+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-input:-ms-input-placeholder { /* IE 10+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-input:-moz-placeholder { /* Firefox 18- */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#submit {
+  background-color: #dbac6d;
+  border: #0b2641;
+  color: #0b2641;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 10pt;
+  float: left;
+}
+
+#brochure {
+  background-color: #dbac6d;
+  border: #0b2641;
+  color: #0b2641;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 10pt;
+  text-align: right;
+  justify-content: right;
+  align-items: flex-end;
+  margin-left: 200px;
+}
+
+#contacttitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  text-align: left;
+}
+
+#brochuretitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  text-align: right;
+}
+
+#privateevent {
+  justify-content: space-between;
+}
+
+.left {
+  height: 400px;
+  padding: 50px 10px;
+}
+
+.right {
+  height: 400px;
+  padding: 50px 10px;
+  float: right
+}
+
+
+@media only screen and (max-width: 811px) {
+  #homehero {
+    background-size: cover;
+    background-attachment: scroll;
+    height: 500px;
+  }
+  #whatson {
+    height: 270px;
+  }
+  
+  #menu {
+    height: 270px;
+  }
+  
+  #events {
+    height: 270px;
+  }
+  #homethumb {
+    font-size: medium;
+    height: 270px;
+  }
+  #navtext {
+    font-stretch: expanded;
+    font-size: small;
+  }
+  #menuhero {
+    background-position: bottom;
+    height: 600px;
+
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #whatson {
+    height: 150px;
+  }
+  
+  #menu {
+    height: 150px;
+  }
+  
+  #events {
+    height: 150px;
+  }
+  .bluecontainer {
+    background-color: #0c3151;
+    height: 500px;
+  }
+  #abouttitle {
+    margin-top: 200px;
+  }
+  #homethumb {
+    height: 150px;
+    font-size: small;
+  }
+  .drinkname {
+    text-align: left;
+    padding: 0px;
+  }
+  
+  .drinkdescription {
+    text-align: left;
+    color: #2c4044;
+    padding: 0px 10px 0px 0px;
+  }
+  
+  .drinkprice {
+    float: right;
+    padding: 0px 25px 0px 25px;
+  }
+  
+  .drinkglass {
+    float: right;
+    margin: 0px 25px 0px 25px;
+  }
+  
+  .drinkbottle {
+    float: right;
+    padding: 0px 25px 0px 25px;
+  }
+  
+  #served {
+    padding: 0px;
+  }
+  
+  #glass {
+    color: #dbac6d;
+    font-weight: 100;
+    font-stretch: expanded;
+    padding: 0px 50px;
+    text-align: right;
+  }
+}
+
+// filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
